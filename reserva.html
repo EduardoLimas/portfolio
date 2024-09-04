@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Viagem</title>
+</head>
+<body>
+    <section>
+        <h2>Orçamento</h2>
+        <form action="" method="get">
+            <label>Nome</label><br>
+            <input type="text" name="nome"><br><br>
+                <fieldset>
+                    <legend>Dados da viagem</legend>
+                    <label>E-mail</label><br>
+                    <input type="email" required name="email"><br><br>
+
+                    <label>Data de ida</label><br>
+                    <input type="date" name="dataida"><br><br>
+
+                    <label>Data de Volta</label><br>
+                    <input type="date" name="datavolta"><br><br>
+
+                    <label>Quantidade de pessoas</label><br>
+                    <input type="number" name="qtdpessoas"><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Serviços desejados</legend>
+                    <label>
+                        <input type="checkbox" name="Passagens" value="Passagens">Compra de Passagens
+                    </label>
+                    <label>
+                        <br><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de hospedagem
+                    </label>
+                    <label>
+                        <br><input type="checkbox" name="veiculos" value="veiculos">Aluguel de Veículos
+                    </label>
+                </fieldset>
+                <br><br>
+                <fieldset>
+                    <legend>Forma de Pagamento</legend>
+                    <label>
+                        <br><input type="radio" name="formaPagamento" value="Cartao de credito">Cartão de Crédito
+                    </label>
+                    <label>
+                        <br><input type="radio" name="formaPagamento" value="Boleto">Boleto
+                    </label>
+                    <label>
+                        <br><input type="radio" name="formaPagamento" value="Pix">Pix
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Escolha o prazo para pagamento</legend>
+                    <select name="prazoPagamento">
+                        <option value="aVista">À Vista</option>
+                        <option value="5x">5x sem juros</option>
+                        <option value="10x" selected>10x cem juros</option>
+                    </select>
+
+                </fieldset>
+                <label>Comentários</label><br>
+                <textarea rows="5" name="comentario"></textarea><br><br>
+                <button>Salvar</button>
+        </form>
+    </section>
+    <footer>
+        <p>Desenvolvido por Eduardo Andrade</p>
+    </footer>
+</body>
+
+</html>
